@@ -1,0 +1,19 @@
+{
+  "name": "ex_8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
+    "save": "^2.9.0"
+  }
+}
