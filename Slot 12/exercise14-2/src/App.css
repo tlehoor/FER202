@@ -1,0 +1,57 @@
+/* src/App.css (hoặc src/index.css) */
+.dark-mode-content {
+  background-color: #212529; /* Màu nền tối của Bootstrap */
+  color: #fff; /* Chữ trắng */
+}
+
+/* Tùy chỉnh màu cho các thành phần bên trong */
+.dark-mode-content .card {
+  background-color: #343a40; /* Màu nền tối hơn cho card */
+  color: #fff;
+}
+
+.dark-mode-content .btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.dark-mode-content .btn-primary:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+.dark-mode-content .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.dark-mode-content .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+ .dark-mode-content .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black; /* chữ đen*/
+}
+.dark-mode-content .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+.dark-mode-content .btn-success {
+  background-color: #198754;
+    border-color: #198754;
+}
+.dark-mode-content .btn-success:hover{
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.dark-mode-content .list-group-item {
+  background-color: #495057;
+  color: #fff;
+  border-color: #6c757d;
+}
+.dark-mode-content .alert-success{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724
+}
