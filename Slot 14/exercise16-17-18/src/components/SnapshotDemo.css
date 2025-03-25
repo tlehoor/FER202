@@ -1,0 +1,74 @@
+/* SnapshotDemo.css */
+
+.snapshot-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transform */
+    overflow: hidden; /* Hide overflowing content during animation */
+  }
+  
+  .snapshot-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  .count-display {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  
+  .count-value {
+    color: #0d6efd; /* Bootstrap primary color */
+    font-weight: bold;
+    display: inline-block; /* Allows for animation */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Animate the count value on change */
+  .count-value.changed {
+    transform: scale(1.2);
+    color: #28a745; /* Bootstrap success color */
+  }
+  .button-group {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+  
+  .action-button {
+    margin-bottom: 0.5rem; /* Add some vertical spacing between buttons */
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+  }
+  
+  .action-button:hover {
+    transform: translateY(-3px); /* Lift the button slightly on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  }
+  .action-button:disabled {
+      opacity: 0.65;
+      cursor: not-allowed; /* Show not-allowed cursor when disabled */
+  }
+  
+  /* react-transition-group classes for Alert animation */
+  .alert-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .alert-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .alert-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .alert-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
