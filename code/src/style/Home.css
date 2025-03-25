@@ -1,0 +1,496 @@
+/* src/App.css */
+
+/* Đảm bảo toàn bộ trang mở rộng toàn bộ chiều rộng và căn giữa nội dung */
+.homepage {
+  background-color: #FFF7E6 !important;
+  margin: 0 !important;
+  padding: 0;
+  min-height: 100vh; /* Đảm bảo nền phủ toàn bộ trang */
+  width: 100%; /* Đảm bảo mở rộng toàn bộ chiều rộng */
+  overflow-x: hidden;
+}
+
+.pokemon-promo {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #FFF7E6 !important; /* Màu nền vàng nhạt giống trong hình mẫu */
+  min-height: 100vh; /* Đảm bảo nền phủ toàn bộ trang */
+  padding: 20px 0;
+  width: 100%; /* Đảm bảo mở rộng toàn bộ chiều rộng */
+}
+
+/* CSS cho thanh điều hướng */
+.header {
+  padding: 10px 0;
+  width: 100%; /* Đảm bảo thanh điều hướng chiếm toàn bộ chiều rộng */
+}
+
+/* Logo trong thanh điều hướng */
+.logo {
+  height: 40px;
+}
+
+/* Liên kết trong thanh điều hướng */
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700 !important; /* Màu vàng khi hover hoặc active */
+}
+
+/* Nút "Available Now" hoặc "Giỏ Hàng" */
+.available-now {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-logo {
+  height: 40px;
+}
+
+/* CSS cho hình ảnh chính trên trang Home */
+.main-image {
+  width: 100%; /* Mở rộng toàn bộ chiều rộng của container cha */
+  max-width: 100%; /* Xóa giới hạn max-width để lấp đầy màn hình */
+  height: auto;
+  display: block; /* Đảm bảo hình ảnh không bị ảnh hưởng bởi khoảng trống */
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* CSS cho tiêu đề phát hành */
+.release-title {
+  color: #00b7eb; /* Màu xanh giống trong hình mẫu */
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* CSS cho container của hình ảnh preview */
+.video-preview {
+  position: relative;
+  width: 100%; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 600px; /* Thu nhỏ chiều rộng tối đa của container */
+  margin: 0 auto 30px auto; /* Căn giữa và thêm khoảng cách dưới */
+}
+
+/* CSS cho hình ảnh preview */
+.preview-image {
+  width: 100%; /* Đảm bảo hình ảnh lấp đầy container cha */
+  max-width: 600px; /* Thu nhỏ chiều rộng tối đa của hình ảnh */
+  height: auto; /* Giữ tỷ lệ chiều cao */
+  border: 2px solid #b3e5fc; /* Viền xanh nhạt giống trong hình mẫu */
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 0 0 20px rgba(65, 184, 255, 0.8), inset 0 0 0 rgba(65, 184, 255, 0.8); /* Thêm bóng nhẹ */
+  display: block; /* Đảm bảo hình ảnh không bị ảnh hưởng bởi các khoảng trống */
+  margin: 0 auto 60px auto; /* Căn giữa */
+}
+
+/* CSS cho nút Play */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Căn giữa nút */
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Nền mờ đậm hơn để nổi bật */
+  border: 2px solid white !important; /* Thêm viền trắng để nổi bật */
+  border-radius: 50% !important; /* Hình tròn */
+  width: 60px; /* Thu nhỏ nút play */
+  height: 60px; /* Thu nhỏ nút play */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+  z-index: 10; /* Đảm bảo nút nằm trên hình ảnh */
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Nền đậm hơn khi hover */
+  transform: translate(-50%, -50%) scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+/* Đảm bảo SVG trong nút Play cũng nhỏ lại */
+.play-button svg {
+  width: 40px; /* Thu nhỏ kích thước SVG */
+  height: 40px;
+}
+
+/* Tùy chỉnh kích thước Modal */
+.modal-xl {
+  max-width: 1200px !important; /* Tăng chiều rộng tối đa của modal */
+  width: 90% !important; /* Đảm bảo modal chiếm 90% chiều rộng màn hình */
+}
+
+/* CSS cho container của video trong modal */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Tỷ lệ 16:9 (9/16 = 56.25%) */
+  height: 0;
+  overflow: hidden;
+}
+
+/* CSS cho video (iframe) trong modal */
+.promo-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Thêm bóng nhẹ */
+}
+
+/* Đảm bảo modal không có padding và video lấp đầy */
+.modal-body {
+  padding: 0 !important; /* Xóa padding của Modal.Body */
+}
+
+/* CSS cho card bọc phần giới thiệu Pokémon */
+.pokemon-slide {
+  background-color: #FEFDF3 !important; /* Màu nền vàng nhạt */
+  border: 2px solid #b3e5fc !important; /* Viền xanh nhạt */
+  border-radius: 15px; /* Bo góc */
+  box-shadow: 0 0 20px rgba(65, 184, 255, 0.8), inset 0 0 0 rgba(65, 184, 255, 0.8) !important; /* Thêm bóng nhẹ */
+  margin: 80px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+  width: 100% !important; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  padding: 0 !important;
+}
+
+/* CSS cho phần giới thiệu Pokémon */
+.pokemon-intro {
+  color: #00b7eb;
+  padding: 40px 0px;
+  border-radius: 10px; /* Bo góc bên trong */
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* CSS cho tiêu đề phần giới thiệu */
+.intro-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00b7eb;
+  text-align: center; /* Căn giữa */
+}
+
+/* CSS cho mô tả phần giới thiệu */
+.intro-description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center; /* Căn giữa */
+}
+
+/* CSS cho slider Pokémon */
+.pokemon-slider {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  margin-bottom: 30px; /* Khoảng cách dưới để không sát nút "See them all!!" */
+  width: 100%; /* Đảm bảo slider chiếm toàn bộ chiều rộng của container */
+}
+
+/* CSS cho mỗi Pokémon */
+.pokemon-item {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Sắp xếp hình ảnh và tên theo cột */
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px; /* Thêm khoảng cách dưới để tên không bị sát nút */
+  font-weight: bold;
+  font-size: x-large;
+  gap: 50px;
+  width: 320px;
+}
+
+/* CSS cho hình ảnh Pokémon */
+.pokemon-image {
+  max-width: 320px !important;
+  height: 400px !important;
+  z-index: 1;
+}
+
+/* CSS cho nút "trước" và "sau" */
+.slider-button {
+  background-color: rgba(255, 255, 255, 0.3) !important; /* Nền mờ trắng */
+  color: #00b7eb !important;
+  border: 2px solid #00b7eb !important;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  transition: background-color 0.3s ease !important;
+  margin: 0 10px; /* Khoảng cách giữa nút và Pokémon */
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Nền sáng hơn khi hover */
+}
+
+/* Bỏ position absolute để nút nằm ngang hàng */
+.prev-button,
+.next-button {
+  position: static; /* Bỏ position absolute */
+  transform: none; /* Bỏ transform */
+}
+
+/* CSS cho nút "See them all!!" */
+.see-all-button {
+  background-color: white !important;
+  color: #a00000 !important;
+  font-weight: bold !important;
+  border: 2px solid #ffd700 !important; /* Viền vàng */
+  border-radius: 50px !important;
+  padding: 10px 20px !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+  display: block; /* Đảm bảo nút là block để căn giữa */
+  margin: 0 auto; /* Căn giữa nút */
+  text-decoration: none !important;
+}
+
+.see-all-button:hover {
+  background-color: #ffd700 !important;
+  color: #400080 !important;
+  text-decoration: none !important;
+
+}
+
+/* CSS cho mũi tên trong nút */
+.arrow {
+  background-color: white;
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+/* CSS cho card bọc phần giới thiệu nhân vật */
+.characters-card {
+  border: 2px solid #b3e5fc !important; /* Viền xanh nhạt giống trong hình mẫu */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(65, 184, 255, 0.8), inset 0 0 0 rgba(65, 184, 255, 0.8); /* Thêm bóng nhẹ */
+  margin: 80px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+  width: 100% !important; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+/* CSS cho phần giới thiệu nhân vật */
+.characters-intro {
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của card */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+/* CSS cho hình ảnh nhân vật (cột trái) */
+.characters-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Thêm khoảng cách dưới */
+}
+
+/* CSS cho hình ảnh nhân vật */
+.character-image {
+  max-width: 400px; /* Tăng kích thước để phù hợp với hình ảnh ghép */
+  height: auto;
+}
+
+/* CSS cho phần thông tin nhân vật (cột phải) */
+.characters-info {
+  color: #333; /* Màu chữ xám đậm */
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* CSS cho hình ảnh nhân vật nổi bật */
+.character-highlight {
+  max-width: 150px;
+  height: auto;
+  border: 2px solid #ffd700; /* Viền vàng */
+  border-radius: 10px;
+  margin: 0 auto 20px auto; /* Căn giữa và thêm khoảng cách dưới */
+  display: block; /* Đảm bảo hình ảnh là block để căn giữa */
+}
+
+/* CSS cho tiêu đề phần nhân vật */
+.characters-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00b7eb;
+  text-align: center; /* Căn giữa */
+}
+
+/* CSS cho mô tả phần nhân vật */
+.characters-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center; /* Căn giữa */
+}
+
+/* CSS cho nút "Meet the characters" */
+.characters-button {
+  background-color: white !important;
+  color: #a00000 !important;
+  font-weight: bold !important;
+  border: 2px solid #ffd700 !important; /* Viền vàng */
+  border-radius: 50px !important;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+  display: block; /* Đảm bảo nút là block để căn giữa */
+  margin: 0 auto; /* Căn giữa nút */
+}
+
+.characters-button:hover,
+.arrow:hover {
+  background-color: #ffd700 !important;
+  color: #400080 !important;
+}
+
+/* CSS cho card bọc phần Visit Lumiose City */
+.lumiose-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(65, 184, 255, 0.8);
+  margin: 30px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+  box-shadow: 0 0 20px rgba(65, 184, 255, 0.8), inset 0 0 0 rgba(65, 184, 255, 0.8);
+  width: 100% !important; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+/* CSS cho tiêu đề Visit Lumiose City */
+.lumiose-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.335) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to left, #1CC5C8, #25B2C7) !important; /* Hiệu ứng chấm chấm */
+  background-size: 10px 10px, 100% 100%;
+  padding: 10px 20px;
+  display: block; /* Đảm bảo là block để căn giữa */
+  margin: 0 auto 20px auto; /* Căn giữa và thêm khoảng cách dưới */
+  box-shadow: 0 0 5px rgba(65, 184, 255, 0.8);
+  border: 2px solid #d3ebf3;
+  text-align: center;
+  width: 500px /* Căn giữa văn bản */
+}
+
+/* CSS cho mô tả Lumiose City */
+.lumiose-description {
+  font-size: 1.1rem;
+  color: #595858 !important; /* Màu chữ xám đậm */
+  margin: 0 auto 20px auto; /* Căn giữa và thêm khoảng cách dưới */
+  max-width: 75%; /* Giới hạn độ rộng tối đa */
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* CSS cho hình ảnh Lumiose City */
+.lumiose-image {
+  width: 100%; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 100%; /* Đảm bảo không vượt quá container */
+  height: auto;
+  border: 2px solid #000000;
+  padding: 2px;
+  display: block; /* Đảm bảo hình ảnh là block để căn giữa */
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* CSS cho hình ảnh trong gallery Lumiose City */
+.lumiose-gallery-image {
+  width: 100% !important; /* Mở rộng toàn bộ chiều rộng */
+  max-width: 100%; /* Đảm bảo không vượt quá container */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block; /* Đảm bảo hình ảnh là block để căn giữa */
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* CSS cho mô tả câu chuyện */
+.story-description {
+  font-size: 1.1rem;
+  color: #595858 !important; /* Màu chữ xám đậm */
+  margin: 0 auto 20px auto; /* Căn giữa và thêm khoảng cách dưới */
+  max-width: 75%; /* Giới hạn độ rộng tối đa */
+  text-align: center; /* Căn giữa văn bản */
+}
+
+/* CSS cho tiêu đề câu chuyện */
+.story-title {
+  display: flex;
+  align-items: center; /* Căn giữa icon và tiêu đề theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  color: #00b7eb;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 60px auto 30px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+  text-align: center;
+}
+
+/* CSS cho icon trong tiêu đề */
+.title-icon {
+  margin-right: 10px; /* Khoảng cách giữa icon và tiêu đề */
+  display: flex;
+  align-items: center; /* Giúp icon luôn căn giữa theo chiều dọc */
+  transform: scale(1.5);
+}
+
+/* Định kiểu cho SVG bên trong title-icon */
+.title-icon .st0 {
+  fill: #00b7eb;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .modal-xl {
+    max-width: 90% !important; /* Thu nhỏ modal trên màn hình nhỏ */
+    width: 90% !important;
+  }
+
+  .main-image,
+  .lumiose-image,
+  .lumiose-gallery-image {
+    width: 100%; /* Đảm bảo hình ảnh không vượt quá màn hình */
+    max-width: 100%;
+  }
+
+  .release-title {
+    font-size: 1.5rem; /* Giảm kích thước chữ trên màn hình nhỏ */
+  }
+
+  .video-preview,
+  .preview-image {
+    max-width: 400px; /* Thu nhỏ hơn trên màn hình nhỏ */
+  }
+
+  .play-button {
+    width: 50px; /* Thu nhỏ nút Play trên màn hình nhỏ */
+    height: 50px;
+  }
+
+  .play-button svg {
+    width: 30px; /* Thu nhỏ SVG trên màn hình nhỏ */
+    height: 30px;
+  }
+
+  .lumiose-card,
+  .pokemon-slide,
+  .characters-card {
+    max-width: 100%; /* Đảm bảo card không vượt quá màn hình */
+  }
+}

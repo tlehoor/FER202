@@ -1,0 +1,103 @@
+/* src/style/AddProduct.css */
+
+.add-product-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .add-product-page h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .add-product-form-container {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  /* Style cho form */
+  .form-group-custom {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .form-label-custom {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .form-control-custom {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+  }
+  
+  .form-control-custom:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.1);
+    outline: none;
+  }
+  
+  .form-control-custom::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Style cho preview hình ảnh */
+  .image-preview {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background: #fff;
+  }
+  
+  /* Style cho nút */
+  .submit-btn {
+    background: #4caf50 !important;
+    border: none !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    transition: background 0.3s ease, transform 0.1s ease !important;
+  }
+  
+  .submit-btn:hover {
+    background: #388e3c !important;
+    transform: translateY(-1px);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  .cancel-btn {
+    background: #e0e0e0 !important;
+    border: none !important;
+    color: #333 !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    transition: background 0.3s ease, transform 0.1s ease !important;
+  }
+  
+  .cancel-btn:hover {
+    background: #d0d0d0 !important;
+    transform: translateY(-1px);
+  }
+  
+  .cancel-btn:active {
+    transform: translateY(0);
+  }

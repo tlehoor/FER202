@@ -1,0 +1,109 @@
+/* src/style/Cart.css */
+
+/* Định kiểu cho trang giỏ hàng */
+.cart-page {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Nền xám nhạt */
+    min-height: 100vh;
+  }
+  
+  /* Tiêu đề giỏ hàng */
+  .cart-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00b7eb; /* Màu xanh giống chủ đề Pokémon */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Thông báo giỏ hàng trống */
+  .empty-cart-message {
+    font-size: 1.2rem;
+    color: #6c757d; /* Màu xám */
+    text-align: center;
+  }
+  
+  /* Bảng giỏ hàng */
+  .cart-table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hình ảnh sản phẩm trong giỏ hàng */
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Nút tăng/giảm số lượng */
+  .quantity-btn {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  
+  /* Hiển thị số lượng */
+  .quantity-display {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Nút xóa sản phẩm */
+  .remove-btn {
+    border-radius: 5px;
+  }
+  
+  /* Tóm tắt giỏ hàng */
+  .cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  /* Tổng giá tiền */
+  .cart-summary h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Nút checkout */
+  .checkout-btn {
+    background-color: #00b7eb !important; /* Màu xanh giống chủ đề */
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #0098c7 !important; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  /* Nút thêm sản phẩm mới (dành cho admin) */
+  .add-product-btn {
+    background-color: #28a745 !important; /* Màu xanh lá để phân biệt */
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .add-product-btn:hover {
+    background-color: #218838 !important; /* Màu xanh lá đậm hơn khi hover */
+  }

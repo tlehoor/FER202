@@ -1,0 +1,54 @@
+/* src/style/Navigation.css */
+
+/* Thanh điều hướng */
+.header {
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+}
+
+/* Thông tin người dùng */
+.user-info {
+  color: white;
+  font-weight: bold;
+}
+
+/* Nút "Giỏ Hàng" */
+.available-btn {
+  background-color: #4caf50 !important; /* Màu xanh lá */
+  border: none !important;
+  color: white !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.available-btn:hover {
+  background-color: #388e3c !important; /* Màu xanh lá đậm hơn khi hover */
+}
+
+/* Nút "Thêm Sản Phẩm" (dành cho admin) */
+.add-product-btn {
+  background-color: #0288d1 !important; /* Màu xanh dương để phân biệt */
+  border: none !important;
+  color: white !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.add-product-btn:hover {
+  background-color: #0277bd !important; /* Màu xanh dương đậm hơn khi hover */
+}
+
+/* Nút "Đăng Xuất" */
+.logout-btn {
+  background-color: #f44336 !important; /* Màu đỏ */
+  border: none !important;
+  color: white !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f !important; /* Màu đỏ đậm hơn khi hover */
+}

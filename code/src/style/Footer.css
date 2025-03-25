@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+.footer {
+    padding: 40px 0;
+    background-color: #FFF7E6; /* Màu nền vàng nhạt */
+  }
+  
+  /* CSS cho tiêu đề phát hành trong footer */
+  .footer-release-title {
+    color: #00b7eb; /* Màu xanh giống trong hình mẫu */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: normal;
+  }
+  
+  /* CSS cho tiêu đề newsletter */
+  .newsletter-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #595858; /* Màu xám đậm */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    line-height: normal;
+  }
+  
+  /* CSS cho nút Subscribe */
+  .subscribe-button {
+    background-color: #31c4ed !important; /* Màu xanh */
+    color: white;
+    font-weight: bold;
+    border: none !important;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #009bcd; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+  /* CSS cho các biểu tượng mạng xã hội */
+  .social-icon {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain;
+    display: inline-flexbox;
+    margin-right: 5px;
+}
+  
+  /* CSS cho logo Pokémon Legends: Z-A trong footer */
+  .footer-logo {
+    max-width: 250px !important;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* CSS cho dòng chữ "The Pokémon Company" */
+  .company-text {
+    font-family: 'Anton', sans-serif; /* Sử dụng font Anton */
+    font-size: 1.5rem; /* Kích thước chữ */
+    color: white; /* Màu chữ chính */
+    text-align: center;
+    letter-spacing: 1px; /* Tăng khoảng cách giữa các chữ */
+
+    /* Viền ngoài chữ (Chrome, Safari) */
+    -webkit-text-stroke: 1px black; /* Viền đen mỏng hơn một chút */
+
+    /* Viền ngoài chữ (Firefox & các trình duyệt khác) */
+    text-shadow:  
+        -2px -2px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black,  
+        -2px  0px 0 black,  
+         2px  0px 0 black,  
+         0px -2px 0 black,  
+         0px  2px 0 black; /* Tạo hiệu ứng viền mượt */
+
+    /* Làm mượt viền để không quá gắt */
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+}
+  
+  /* CSS cho các liên kết trong footer */
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* CSS cho dòng chữ copyright */
+  .copyright-text {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+  }

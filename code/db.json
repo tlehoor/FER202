@@ -1,0 +1,346 @@
+{
+  "pokemon": [
+    {
+      "id": "1",
+      "name": "Chikorita",
+      "image": "/pokemons/chikorita.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Tepig",
+      "image": "/pokemons/tepig.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Totodile",
+      "image": "/pokemons/totodile.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Fletchling",
+      "image": "/pokemons/Fletchling.png"
+    },
+    {
+      "id": "5",
+      "name": "Bunnelby",
+      "image": "/pokemons/Bunnelby.jpg"
+    }
+  ],
+  "characters": [
+    {
+      "id": "1",
+      "name": "Trainer",
+      "description": "After arriving in Lumiose for some sightseeing, you'll make new friends and tackle all sorts of incidents in the city.",
+      "image": "/characters/mc.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Urbain / Taunie",
+      "description": "You'll make a friend who lives and works at Hotel Z, supporting the owner however they can. They may come on strong at times, but they like helping people and Pokémon. They're quite skilled at Pokémon battles too.",
+      "image": "/characters/rivals.jpg"
+    },
+    {
+      "id": "3",
+      "name": "AZ",
+      "description": "AZ is a man who stands over nine feet tall. He's the owner of Hotel Z and claims to be three thousand years old. He quietly harbors a strong determination and will.",
+      "image": "/characters/AZ.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Eternal Floette",
+      "description": "This unusual Floette looks different from other members of her species and holds a black flower. She's also said to have lived for three thousand years. She always accompanies AZ.",
+      "image": "/characters/Eternal.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Jett",
+      "description": "Jett is the CEO of Quasartico Inc., a large corporation driving Lumiose's urban redevelopment plan with the aim of shaping the city into one that belongs to both people and Pokémon. It seems she hopes to deepen the bonds between Pokémon and people.",
+      "image": "/characters/Jett.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Vinnie",
+      "description": "Vinnie is a large man who wears sunglasses. He works at Quasartico as Jett's secretary. He always seems busy and has a reputation for being a fast worker.",
+      "image": "/characters/Vinnie.jpg"
+    }
+  ],
+  "pokemonRoster": [
+    {
+      "id": "1",
+      "name": "Chikorita",
+      "image": "/pokemons/chikorita.jpg",
+      "category": "Leaf Pokémon",
+      "height": "2'11",
+      "type": "Grass",
+      "weight": "14.1 lbs"
+    },
+    {
+      "id": "2",
+      "name": "Tepig",
+      "image": "/pokemons/tepig.jpg",
+      "category": "Fire Pig Pokémon",
+      "height": "1'08",
+      "type": "Fire",
+      "weight": "21.8 lbs"
+    },
+    {
+      "id": "3",
+      "name": "Totodile",
+      "image": "/pokemons/totodile.jpg",
+      "category": "Big Jaw Pokémon",
+      "height": "2'00",
+      "type": "Water",
+      "weight": "20.9 lbs"
+    },
+    {
+      "id": "4",
+      "name": "Fletchling",
+      "image": "/pokemons/Fletchling.png",
+      "category": "Tiny Robin Pokémon",
+      "height": "1'00",
+      "type": "Normal Flying",
+      "weight": "3.7 lbs"
+    },
+    {
+      "id": "5",
+      "name": "Bunnelby",
+      "image": "/pokemons/Bunnelby.jpg",
+      "category": "Digging Pokémon",
+      "height": "1'04",
+      "type": "Normal",
+      "weight": "11.0 lbs"
+    },
+    {
+      "id": "6",
+      "name": "Pikachu",
+      "image": "/pokemons/pikachu.jpg",
+      "category": "Mouse Pokémon",
+      "height": "1'04",
+      "type": "Electric",
+      "weight": "13.2 lbs"
+    },
+    {
+      "id": "7",
+      "name": "Floette",
+      "image": "/pokemons/Floette.jpg",
+      "category": "Single Bloom Pokémon",
+      "height": "0'08",
+      "type": "Fairy",
+      "weight": "2.0 lbs"
+    },
+    {
+      "id": "8",
+      "name": "Sandile",
+      "image": "/pokemons/Sandile.jpg",
+      "category": "Desert Croc Pokémon",
+      "height": "2'04",
+      "type": "Ground Dark",
+      "weight": "33.5 lbs"
+    },
+    {
+      "id": "9",
+      "name": "Clauncher",
+      "image": "/pokemons/Clauncher.jpg",
+      "category": "Water Gun Pokémon",
+      "height": "1'08",
+      "type": "Water",
+      "weight": "18.3 lbs"
+    },
+    {
+      "id": "10",
+      "name": "Mareep",
+      "image": "/pokemons/Mareep.jpg",
+      "category": "Wool Pokémon",
+      "height": "2'00",
+      "type": "Electric",
+      "weight": "17.2 lbs"
+    },
+    {
+      "id": "11",
+      "name": "Furfrou",
+      "image": "/pokemons/Furfrou.jpg",
+      "category": "Poodle Pokémon",
+      "height": "3'11",
+      "type": "Normal",
+      "weight": "61.7 lbs"
+    },
+    {
+      "id": "12",
+      "name": "Spritzee",
+      "image": "/pokemons/Spritzee.jpg",
+      "category": "Perfume Pokémon",
+      "height": "0'08",
+      "type": "Fairy",
+      "weight": "1.1 lbs"
+    },
+    {
+      "id": "13",
+      "name": "Budew",
+      "image": "/pokemons/Budew.jpg",
+      "category": "Bud Pokémon",
+      "height": "0'08",
+      "type": "Grass Poison",
+      "weight": "2.6 lbs"
+    },
+    {
+      "id": "14",
+      "name": "Honedge",
+      "image": "/pokemons/Honedge.jpg",
+      "category": "Sword Pokémon",
+      "height": "2'07",
+      "type": "Steel Ghost",
+      "weight": "4.4 lbs"
+    },
+    {
+      "id": "15",
+      "name": "Goomy",
+      "image": "/pokemons/Goomy.jpg",
+      "category": "Soft Tissue Pokémon",
+      "height": "1'00",
+      "type": "Dragon",
+      "weight": "6.2 lbs"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "active": true,
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user123",
+      "active": false
+    },
+    {
+      "id": "3",
+      "username": "guest",
+      "password": "guest123",
+      "active": true,
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Nintendo Switch OLED Model",
+      "category": "console",
+      "price": 349.99,
+      "image": "/products/nintendo-switch-oled.jpg",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "name": "Nintendo Switch Lite",
+      "category": "console",
+      "price": 199.99,
+      "image": "/products/nintendo-switch-lite.jpg",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "name": "Pokémon Scarlet",
+      "category": "game",
+      "price": 59.99,
+      "image": "/products/pokemon-scarlet.jpg",
+      "status": "available"
+    },
+    {
+      "id": "4",
+      "name": "Pokémon Violet",
+      "category": "game",
+      "price": 59.99,
+      "image": "/products/pokemon-violet.jpg",
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "name": "Pokémon Legends: Arceus",
+      "category": "game",
+      "price": 59.99,
+      "image": "/products/pokemon-legends-arceus.jpg",
+      "status": "available"
+    },
+    {
+      "id": "6",
+      "name": "Nintendo Switch 2",
+      "category": "console",
+      "price": 0,
+      "image": "/products/nintendo-switch-2.jpg",
+      "status": "upcoming"
+    },
+    {
+      "id": "7",
+      "name": "Pokémon Legends: Z-A",
+      "category": "game",
+      "price": 0,
+      "image": "/products/pokemon-legends-za.jpg",
+      "status": "upcoming"
+    }
+  ],
+  "orders": [
+    {
+      "id": "5113",
+      "userId": 3,
+      "items": [
+        {
+          "id": 2,
+          "name": "Nintendo Switch Lite",
+          "category": "console",
+          "price": 199.99,
+          "image": "/products/nintendo-switch-lite.jpg",
+          "status": "available",
+          "quantity": 1
+        }
+      ],
+      "total": "199.99",
+      "date": "2025-03-25T02:39:51.665Z"
+    },
+    {
+      "id": "ad95",
+      "userId": "3",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nintendo Switch OLED Model",
+          "category": "console",
+          "price": 349.99,
+          "image": "/products/nintendo-switch-oled.jpg",
+          "status": "available",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Pokémon Legends: Arceus",
+          "category": "game",
+          "price": 59.99,
+          "image": "/products/pokemon-legends-arceus.jpg",
+          "status": "available",
+          "quantity": 1
+        }
+      ],
+      "total": "409.98",
+      "date": "2025-03-25T05:42:45.607Z"
+    },
+    {
+      "id": "85e5",
+      "userId": "3",
+      "items": [
+        {
+          "id": "2",
+          "name": "Nintendo Switch Lite",
+          "category": "console",
+          "price": 199.99,
+          "image": "/products/nintendo-switch-lite.jpg",
+          "status": "available",
+          "quantity": 5
+        }
+      ],
+      "total": "999.95",
+      "date": "2025-03-25T05:57:07.337Z"
+    }
+  ]
+}

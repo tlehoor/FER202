@@ -1,0 +1,114 @@
+.gameplay-page {
+  background-color: #FFF7E6 !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.discover-gameplay-card {
+  position: relative;
+  min-height: 500px;
+  background-color: transparent !important;
+}
+
+.discover-gameplay-card .card-body {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.discover-gameplay-card .row,
+.discover-gameplay-card .col,
+.discover-gameplay-info,
+.discover-gameplay-image-col {
+  background-color: transparent !important;
+}
+
+.discover-gameplay-video {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Card thứ hai: Mega Evolution */
+.mega-evolution-card {
+  background-color: #fefdf3 !important; /* Màu nền vàng nhạt */
+  border: 2px solid #b3e5fc !important; /* Viền xanh nhạt giống trong hình mẫu */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(65, 184, 255, 0.8),
+    inset 0 0 0 rgba(65, 184, 255, 0.8); /* Thêm bóng nhẹ */
+  margin: 80px 0;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mega-evolution-card .card-body {
+  padding: 40px;
+}
+
+/* Tiêu đề chính */
+.mega-evolution-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.335) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to left, #1cc5c8, #25b2c7) !important; /* Hiệu ứng chấm chấm */
+  background-size: 10px 10px, 100% 100%;
+  padding: 10px 20px;
+  display: inline-block; /* Để nền chỉ bao quanh chữ */
+  margin-bottom: 20px;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 0 5px rgba(65, 184, 255, 0.8);
+  border: 2px solid #d3ebf3;
+}
+
+/* Mô tả ngắn */
+.mega-evolution-description {
+  font-size: 1rem;
+  color: #595858; /* Màu xám đậm */
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Tiêu đề phụ (bỏ biểu tượng Poké Ball) */
+.mega-evolution-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00b7eb; /* Màu xanh lam */
+  margin-bottom: 20px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Nội dung chi tiết */
+.mega-evolution-details {
+  font-size: 1rem;
+  color: #595858; /* Màu xám đậm */
+  line-height: 1.6;
+}
+
+.mega-evolution-details p {
+  margin-bottom: 15px;
+}
+
+.mega-evolution-image {
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    margin-top: 30px; /* Khoảng cách phía trên */
+    border-radius: 10px; /* Bo góc */
+    display: block; /* Đảm bảo hình ảnh không bị ảnh hưởng bởi các khoảng trống */
+    margin-left: auto;
+    margin-right: auto; /* Căn giữa hình ảnh */
+  }
+  
+  /* 6 hình ảnh nhỏ */
+  .mega-evolution-steps {
+    margin-top: 30px; /* Khoảng cách phía trên */
+  }
+  
+  .mega-processing-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bo góc nhẹ */
+    border: 1px solid #d3e8ff; /* Viền xanh lam nhạt */
+  }

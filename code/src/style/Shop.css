@@ -1,0 +1,85 @@
+.shop-page {
+  padding-top: 10px;
+  background-color: #fff7e6; /* Xám nhạt */
+  min-height: 100vh;
+}
+
+.product-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card.upcoming {
+  opacity: 0.6; /* Làm mờ sản phẩm chưa ra mắt */
+  cursor: not-allowed; /* Con trỏ không cho phép */
+}
+
+.product-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  line-height: normal;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #1b5e20; /* Xanh lá đậm */
+  margin-bottom: 5px;
+}
+
+.product-status {
+  font-size: 0.9rem;
+  color: #1b5e20; /* Xanh lá đậm */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  background: linear-gradient(
+    135deg,
+    #ffca28,
+    #f57c00
+  ); /* Gradient vàng - cam */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: #212121; /* Chữ đen */
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #ffdd57,
+    #fb8c00
+  ); /* Gradient sáng hơn khi hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.add-to-cart-btn:disabled {
+  background: linear-gradient(
+    135deg,
+    #666,
+    #444
+  ); /* Màu xám khi bị vô hiệu hóa */
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
